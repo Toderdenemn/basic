@@ -1,0 +1,125 @@
+* {
+    
+}
+.images {
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.images img {
+    margin: 10px;
+    border-radius: 20px;
+}
+
+
+
+@media only screen and (min-width: 1024px) {
+    .images img {
+        width: calc(100%/6 - 20px);
+    }
+    .section{
+        display: flex;
+        flex-direction: row;
+    }
+    .mid-sec{
+        width: 70%;
+        margin-right: 10%;
+    }
+    .main{
+        margin-top: 20px;
+        margin-left: 10px;
+        display: flex;
+        flex-direction: row;
+    }
+    .main img{
+        width: calc(100%/3 - 20px);
+        border-radius: 10px;
+    }
+    .text{
+        margin-left: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 70%;
+    }
+    .main h2{
+        margin-bottom: 10px;
+        
+    }
+    .main p{
+        margin-top: -10px;
+        color: gray;
+    }
+    .side{
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+        color: black;
+        line-height: 20px;
+        margin-right: 10px;
+    }
+    .side h2{
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    
+
+    .images img {
+        width: calc(100%/3 - 20px);
+    }
+    .section{
+        display: flex;
+        flex-direction: column;
+    }
+    .mid-sec{
+        width: 100%;
+        margin-right: 10%;
+    }
+    .main{
+        margin-top: 20px;
+        margin-left: 10px;
+        display: flex;
+        flex-direction: row;
+    }
+    .main img{
+        width: calc(100%/3 - 20px);
+        border-radius: 10px;
+    }
+    .text{
+        margin-left: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 70%;
+    }
+    .main h2{
+        margin-bottom: 10px;
+        
+    }
+    .main p{
+        margin-top: -10px;
+        color: gray;
+    }
+    .side{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        color: black;
+        line-height: 20px;
+        margin-right: 10px;
+        margin-left: 10px;
+        padding-right: 10px;
+    }
+}
+
+@media only screen and (max-width: 767px){
+    
+
+    .images img {
+        width: 97%;
+    }
+}
